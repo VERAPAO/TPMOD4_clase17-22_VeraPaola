@@ -1,0 +1,29 @@
+body.login {
+    background-color: var(--grisClaro);
+}
+
+
+main.login {
+     margin:0;
+     padding: 0;
+     width: 100%;
+}
+
+
+footer.login {
+    background-color: var(--blanco);
+}
+
+.btn-custom-send {
+    color: var(--blanco);
+    background-color: var(--verde);
+    transition: all 1s;
+}
+
+
+.btn-custom-send:hover {
+    color: var(--blanco);
+    background-color: var(--botonEnv);
+    box-shadow: 0px 0px 20px 5px var(--celeste);
+
+}

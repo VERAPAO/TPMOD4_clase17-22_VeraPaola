@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <title>Crea tu cuenta</title>
+
+</head>
+<body>
+    <header class="header-home">
+        <div class="logo-and-search">
+            <div class="logo-mercado-liebre"><img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"></div>
+             <div class="search-container"> 
+                     <form method="post" action="/search">
+                     <input class="barra-busqueda-header" type="search" name="search-text" placeholder="Buscar productos, marcas"/>
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                     </form>
+             
+             </div> 
+            
+             <div class="compras-2">
+                 <p class="comprar-tarjeta">  <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p></div>
+
+         </div>
+
+         <div class="compras"><i class="fa-solid fa-hand-holding-dollar"></i><p class="comprar-tarjeta">Comprá en cuotas y sin tarjeta de crédito</p></div>
+         
+        
+     <div class="nav-container">
+     <nav class="nav-bar">
+         <ul class="nav-bar">
+             <li><a href="#">Ofertas</a></li>
+             <li><a href="#">Tiendas Oficiales</a></li>
+             <li><a href="#">Vender</a></li>
+             <li><a href="#">Ayuda</a></li>
+         </ul>
+     </nav>
+     <nav class="nav-login">
+         <ul class="login">
+             <li><a href="/registro">Creá tu cuenta</a><i class="fa-regular fa-id-card"></i></li>
+             <li><a href="/ingresa">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
+             <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+         </ul>
+     </nav>
+     </div>
+     <div class="burger-menu">
+         <i class="fas fa-bars"></i>
+     </div> 
+     </div>   
+    </header>
+
+    <main class="main-register my-5 mx-2">
+        <form action="/registro" method="POST" class="row justify-content-center justify-content-md-start m-3">
+
+            <!--NOMBRE Y APELLIDO-->
+            <div class="col-10 col-md-6 col-lg-4 d-flex flex-column mb-3">
+                <label class="fst-italic text-custom-info" for="nombreYApellido">Nombre y apellido</label>
+                <input class="form-control form-control-sm custom-input" type="text" name="nombreYApellido" value="" id="nombreYApellido" minlength="6" maxlength="20" required>
+                <span id="invalidMessage" class="text-alert-custom">Debe tener entre 6 y 20 caracteres.</span>
+            </div>
+
+            <!--NOMBRE DE USUARIO-->
+            <div class="col-10 col-md-6 col-lg-4 d-flex flex-column mb-3">
+                <label class="fst-italic text-custom-info" for="usuari@">Nombre de usuari@</label>
+                <input class="form-control form-control-sm custom-input" type="text" name="usuari@" value="" id="usuari@" minlength="4" maxlength="10" required>
+                <span id="invalidMessage" class="text-alert-custom">Debe tener entre 4 y 10 caracteres.</span>
+            </div>
+
+            <!--EMAIL-->
+            <div class="col-10 col-md-6 col-lg-4 d-flex flex-column mb-3">
+                <label class="fst-italic text-custom-info" for="email">E-mail</label>
+                <input class="form-control form-control-sm custom-input" type="email" name="email" value="" id="email">
+                <span id="invalidMessage" class="text-alert-custom">Formato de email inválido.</span>
+            </div>
+
+            <!--FECHA DE NACIMIENTO-->
+            <div class="col-10 col-md-6 col-lg-4 d-flex flex-column mb-3">
+                <label class="fst-italic text-custom-info" for="fechaNac">Fecha de nacimiento</label>
+                <input class="form-control form-control-sm custom-input" type="date" name="fechaNac" value="" id="fechaNac">
+            </div>
+
+            <!--DOMICILIO-->
+            <div class="col-10 col-md-6 col-lg-4 d-flex flex-column mb-3">
+                <label class="fst-italic text-custom-info" for="callenumero">Domicilio</label>
+                <input class="form-control form-control-sm custom-input" type="text" name="callenumero" id="callenumero" value="" placeholder="Calle y número" minlength="6" maxlength="20">
+                <span id="invalidMessage" class="text-alert-custom">Debe tener entre 6 y 20 caracteres.</span>
+            </div>
+                
+            <!--PERFIL DE USUARIO-->
+            <div class="col-10 col-md-12 row mx-2 my-5 p-0 pt-4 container-user-profile">
+                <h5 class="col-12 mb-3 fst-italic fw-normal text-custom-title">Perfil de usuario</h5>
+                    <div class="col-12 col-md-4">
+                        <input type="radio" class="form-check-input" name="perfilUsuario" id="comprador" value="comprador" checked>
+                        <label for="comprador">Comprador</label>
+                    </div>
+    
+                    <div class="col-12 col-md-4">
+                        <input type="radio" class="form-check-input" name="perfilUsuario" id="vendedor" value="vendedor">
+                        <label for="vendedor">Vendedor</label>
+                    </div>
+            </div>
+
+            <!--INTERESES-->
+
+            <div class="col-10 col-md-12 mx-2 row p-0 pt-4 container-user-profile">
+                <h5 class="col-12 fst-italic fw-normal mb-3 text-custom-title">Intereses</h5>
+
+                <div class="col-12 col-md-4">
+                    <input type="checkbox" class="form-check-input" name="intereses" id="electro" value="electro">
+                    <label for="electro">Electro</label>
+                </div>
+    
+                <div class="col-12 col-md-4">
+                    <input type="checkbox" class="form-check-input" name="intereses" id="moda" value="moda">
+                    <label for="moda">Moda</label>
+                </div>
+    
+                <div class="col-12 col-md-4">
+                    <input type="checkbox" class="form-check-input" name="intereses" id="hogar" value="hogar">
+                    <label for="hogar">Hogar</label>
+                </div>
+    
+                <div class="col-12 col-md-4">
+                    <input type="checkbox" class="form-check-input" name="intereses" id="jugueteria" value="jugueteria">
+                    <label for="jugueteria">Juguetería</label>
+                </div>
+    
+                <div class="col-12 col-md-4">
+                    <input type="checkbox" class="form-check-input" name="intereses" id="vidaSana" value="vidaSana" checked>
+                    <label for="vidaSana">Vida sana</label>
+                </div>
+            
+            </div>
+
+            <!--FOTO DE USUARI@-->
+    
+            <div class="col-10 col-md-12 justify-content-center justify-content-md-start d-flex mx-2 flex-column my-4 row p-0 mt-5 container-user-profile">
+                <label class="fst-italic text-custom-title pt-4 p-0" for="avatar"><h5 class="fw-normal mb-4 text-nowrap">Tu foto de perfil</h5>
+                     <figure class="container-preview-img">
+                         <img src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="avatar default">
+                     </figure>
+                 </label>
+                 <div class="col-12 col-md-6 col-lg-4 p-0">
+                 <input class="form-control mx-auto custom-input" type="file" accept=".jpg"  name="avatar" id="avatar" value="avatar" multiple>
+                 </div>
+            </div>
+
+        <div class="col-10 col-md-12 mt-4 mx-2 row p-0 py-4 container-user-profile">
+            <div class="col-12 col-md-6 col-lg-4 pt-4  d-flex flex-column mb-3">
+                <label class="text-custom-info fst-italic" for="contrasenia">Contraseña</label>
+                <input class="form-control form-control-sm custom-input" type="password" name="contrasenia" value="" id="contrasenia" minlength="8" maxlength="20">
+                <span id="nameuserMessage" class="text-alert-custom">La contraseña debe tener entre 8 y 20 caracteres, al menos una mayúscula y un número.</span>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 pt-4 d-flex flex-column mb-3">
+                <label class="text-custom-info fst-italic" for="contraseniaConf">Confirmar contraseña</label>
+                <input class="form-control form-control-sm custom-input" type="password" name="contraseniaConf" value="" id="contraseniaConf">
+                <span id="nameuserMessage" class="text-alert-custom">La contraseña debe coincidir.</span>
+            </div>
+        </div>
+            
+        
+            <div class="d-flex justify-content-center justify-content-lg-end gap-2 mt-4">
+                <button class="btn btn-lg btn-custom-success" type="submit"><a href="/">Enviar</a></button>
+                <button class="btn btn-lg  btn-custom-delete" type="reset">Borrar</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer class="home-footer">
+        <section class="pago">
+            <div><i class="fa-solid fa-credit-card"></i></div>
+            <h4>Pagá con tarjeta o efectivo</h4>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro!</p>
+        </section>
+        <section class="envio">
+            <div><i class="fa-solid fa-gift"></i></div>
+            <h4>Envío gratis desde $ 2.500</h4>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos</p>
+        </section>
+        <section class="seguridad">
+            <div><i class="fa-solid fa-user-shield"></i></div>
+            <h4>Seguridad, de principio a fin</h4>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            porque estás siempre protegid@.</p>
+        </section>
+        <section class="copyright">
+            <h6>Copyright © 1999-2020 MercadoLiebre S.R.L.</h6>
+        </section>
+    </footer>
+
+<!--script BOOSTRAP-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

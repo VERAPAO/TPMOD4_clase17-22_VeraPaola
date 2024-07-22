@@ -1,0 +1,440 @@
+main.main-home{
+    width: 100%;
+    text-align: center;
+    background-color: var(--grisClaro);
+    margin: 0 0 10px 0;
+    }
+
+main.main-home div.banner-container{width: 100%;/* display: flex; */}
+
+main.main-home div.banner-container img{width: 100%;}
+
+
+main.main-home section.article-container {
+    width: 90vw;
+    margin: auto;
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+main.main-home section.last-section {
+
+margin-bottom: 40px;
+}
+
+main.main-home section.article-container h3 {
+
+text-align: center;
+
+margin: 5px 0 20px 0;
+
+color: var(--grisOscuro);
+
+font-size: var(--tamañoTitulares);
+
+flex-grow: 1;
+}
+
+main.main-home section.article-container div.article-container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+main.main-home section.article-container article.product-container {
+
+gap: 5px;
+
+margin: 10px auto;
+
+width: 100%;
+
+background-color: var(--blanco);
+
+
+transition: all 1s;
+
+}
+
+main.main-home section.article-container article.product-container:hover {
+
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+}
+
+
+
+main.main-home section.article-container article.product-container img {
+
+width: 100%;
+
+/* margin-left: 18px; */
+
+/* padding: 0; */
+}
+
+main.main-home section.article-container article.product-container div.card-text {border-top: 1px solid var(--grisClaro);background-color: var(--blanco);padding: 15px;/* margin-left: 18px; */width: 100%;position: relative;}
+
+
+main.main-home section.article-container article.product-container div.card-text div.global-container-truck {
+
+position: absolute;
+
+right: 20px;
+
+top: -15px;
+}
+
+main.main-home section.article-container article.product-container div.card-text div.global-container-truck div {
+    
+/* position: relative; */
+    
+height: 30px;
+    
+width: 30px;
+    
+border: 1px solid var(--verde);
+    
+border-radius: 50%;
+    
+margin: 15 px 0 0 0;
+
+transition: all 0.7s;
+
+transition-timing-function: ease-in;
+
+}
+
+
+main.main-home section.article-container article.product-container div.card-text div.global-container-truck div:hover {
+    transform: rotate(-90deg);
+}
+
+
+
+main.main-home section.article-container article.product-container div.card-text div i.fa-circle {
+
+position: absolute;
+
+top: 0;
+
+left: 0px;
+
+font-size: 4rem;
+
+border-radius: 60%;
+
+font-weight: 100;
+
+/* width: 100%; */
+
+/* border: 1px solid green; */
+}
+
+
+main.main-home section.article-container article.product-container div.card-text div i.fa-truck{
+
+position: absolute;
+
+top: -13px;
+
+left: -14px;
+
+padding: 20px;
+
+color: var(--verde);
+
+font-size: 16px;
+
+width: 30px;
+
+
+}
+
+
+
+main.main-home section.article-container article.product-container div.card-text div.container-data-product {
+    
+width: 100%;
+    
+margin: 0;
+    
+padding: 30px 0px 5px 0px;
+    
+position: relative;
+
+}
+
+main.main-home section.article-container article.product-container div.card-text div.container-data-product p.precio {
+
+/* text-align: right; */
+
+position: absolute;
+
+
+display: inline-block;
+
+
+font-weight: 500;
+
+font-size: var(--tamañoPrecios);
+
+color: var(--negro);
+
+left: 5px;
+
+width: 30%;
+
+top: 6px;
+
+
+}
+
+
+main.main-home section.article-container article.product-container div.card-text div.container-data-product p.descuento{
+
+text-align: left;
+
+/* margin: 0 0 0 14px; */
+
+align-self: end;
+
+justify-content: start;
+
+font-size: var(--tamañoDescuentos);
+
+color: var(--verde);
+
+display: inline-block;
+
+width: 70%;
+
+position: absolute;
+
+top: 8px;
+
+right: -20px;
+
+margin-botton: 10px;
+}
+
+
+main.main-home section.article-container article.product-container div.card-text  h4 {
+
+/* text-align: left; */
+
+margin: 20px 0 10px 0;
+
+/* padding-left: 12px; */
+
+font-size: var(--tamañoDescripciones);
+
+color: var(--grisOscuro);
+
+display: none;
+}
+
+/*------------------------VISTA TABLET--------------------------------*/
+/*--------------------------------------------------------------------*/
+
+
+
+
+@media (min-width: 361px) {
+
+    main.main-home{
+      
+    }
+    
+    main.main-home div.banner-container{
+    }
+    
+    main.main-home div.banner-container img{
+       
+    }
+    
+    
+    main.main-home section.article-container {
+       
+    }
+    
+    main.main-home section.article-container h3 {
+    
+    
+    }
+
+    main.main-home section.article-container div.article-container-flex{
+    /* flex-direction: column; */
+}
+
+    
+    main.main-home section.article-container article.product-container {
+    
+    width: 47%;
+        
+    margin-left: 5px;
+        
+    gap: 5px;
+    }
+    
+    main.main-home section.article-container article.product-container img {
+    
+widht: 50%;
+    }
+    
+    main.main-home section.article-container article.product-container div.card-text {
+ 
+padding-bottom: 0;
+ 
+padding-left: 2px;
+}
+    
+    
+    main.main-home section.article-container article.product-container div.card-text div i.fa-circle {
+    
+    
+    }
+    
+    main.main-home section.article-container article.product-container div.card-text div i.fa-truck{
+    
+    
+    }
+
+    main.main-home section.article-container article.product-container div.card-text div.container-data-product {
+        
+width: 100%;
+        
+padding-bottom: 0px;
+    }
+    
+    
+    
+    
+    main.main-home section.article-container article.product-container div.card-text div.container-data-product p.precio {
+    }
+    
+    
+    main.main-home section.article-container article.product-container div.card-text div.container-data-product p.descuento{
+    
+text-align: right;
+    
+right: -6px;
+    }
+    
+
+
+
+
+    main.main-home section.article-container article.product-container div.card-text h4 {
+    /* width: 100%; */
+    /* padding-left: 9%; */
+    margin-top: 8px;
+    display: block;
+    margin-left: 5px;
+    margin-bottom: 12px;
+    text-align: left;
+    opacity: 0;
+    transition: all 0.5s;
+    }
+
+    
+    main.main-home section.article-container article.product-container div.card-text h4:hover {
+        
+        opacity: 1;
+    }
+        
+    
+
+    
+}
+
+/*----------------DESKTOP--------------------------*/
+/*-------------------------------------------------*/
+
+
+
+@media (min-width: 769px) {
+    
+    main.main-home{
+        
+    }
+    
+    main.main-home div.banner-container{
+    }
+    
+    main.main-home div.banner-container img{
+       
+
+    }
+    
+    
+    main.main-home section.article-container {
+    width: 96vw;
+    margin-bottom: 30px;
+    }
+    
+    main.main-home section.article-container h3 {
+    
+    
+    }
+
+    main.main-home section.article-container div.article-container-flex{}
+    
+    main.main-home section.article-container article.product-container {
+  
+    width: 24%;
+    
+    }
+    
+    main.main-home section.article-container article.product-container img {
+  
+    }
+    
+    main.main-home section.article-container article.product-container div.card-text {
+   
+    }
+    
+    main.main-home section.article-container article.product-container div.card-text div{
+        
+
+    }
+    
+    main.main-home section.article-container article.product-container div.card-text div i.fa-circle {
+    
+  
+    }
+    
+    main.main-home section.article-container article.product-container div.card-text div i.fa-truck{
+    
+    
+    }
+    
+    
+    
+    main.main-home section.article-container article.product-container div.card-text div.container-data-product p.precio {
+    }
+    
+    
+    main.main-home section.article-container article.product-container div.card-text div.container-data-product p.descuento{
+    
+    right: 5px;
+    
+
+    }
+
+   
+    
+    main.main-home section.article-container article.product-container div.card-text h4 {
+
+        
+    margin-left: 8px;
+        
+    margin-bottom: 10px;
+        
+    }
+
+
+}
+
+
+

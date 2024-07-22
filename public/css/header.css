@@ -1,0 +1,624 @@
+header.header-home {
+    font-family: var(--familyRoboto);
+    font-size: var(--tamañoTextoGral);
+    background-color: var(--amarillo);
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+
+header.header-home div.logo-and-search {
+    width: 100%;
+    /* padding: 5px; */
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 2px; */
+    /* padding: 20px 15px; */
+    /* flex-wrap: wrap; */
+}
+
+header.header-home div.logo-and-search div.logo-mercado-liebre{
+    /* display: inline-block; */
+    width: 50%;
+    margin-right: 3px;
+}
+
+header.header-home div.logo-and-search div.logo-mercado-liebre img.logo {
+    width: 100%;
+}
+
+header.header-home div.logo-and-search div.search-container {
+    width: 50%;
+    margin-left: 2px;
+}
+
+header.header-home div.logo-and-search div.search-container form {margin-right: 10px;}
+
+
+header.header-home div.logo-and-search div.search-container form input {
+    width: 40%;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+header.header-home div.logo-and-search div.search-container i{
+    position: absolute;
+    right: 30px;
+    top: 33px;
+    background-color: var(--blanco);
+}
+
+.header-home div.compras-2 {
+
+display: none;
+}
+
+
+header.header-home  div.compras {
+    
+/* text-align: center; */
+    
+/* margin: auto; */
+    
+position: relative;
+    
+/* display: block; */
+    
+/* width: 75%; */
+    
+/* display: block; */
+    
+/* margin-left: 40px; */
+    
+margin: 30px;
+    
+/* padding-right: 0px; */
+}
+
+
+.header-home div.compras-2 p.comprar-tarjeta{
+    /* bottom: 1px; */
+    right: 2px;
+    position: absolute;
+    /* display: inline-block; */
+    margin-left: 0;
+    width: 78%;
+    font-size: 9px;
+    padding: 0;
+    /* transform: translateX(10px); */
+}
+
+.header-home div.compras p.comprar-tarjeta{
+    /* display: block; */
+    text-align: center;
+    width: fit-content;
+    font-size: var(--tamañoTextosGral);
+    transform: translateX(10px);
+}
+
+
+.header-home div.compras-2 i.fa-hand-holding-dollar {
+    display: inline-block;
+    position: absolute;
+    left: -2px;
+    top: 2px;
+    font-size: var(--tamañoTextosGral);
+}
+
+
+.header-home div.compras i.fa-hand-holding-dollar {
+    display: inline-block;
+    position: absolute;
+    left: -2px;
+    top: 2px;
+    font-size: var(--tamañoTextosGral);
+}
+
+
+header-home div.iconsearch-header-home {
+     margin:10px; */
+    background-color: var(--blanco);*/
+    display: inline-block;
+    padding: 1px;
+    border: 1px solid var(--grisOscuro); */
+     border-radius: 15%; */
+    margin-top: 1px;
+    position: absolute;
+     display: inline-block; */
+    right: 25px;
+    top: 38px;
+    font-weight: 600;
+    color: var(--grisOscuro);
+}
+
+.header-home div.nav-container {
+        max-width: 99%;
+}
+
+.header-home nav {
+
+display: none;
+}
+
+
+.header-home nav.nav-login {
+
+}
+
+.header-home nav ul.nav-bar {
+    list-style: none;
+    display: inline-block;
+    padding-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: var(--tamañoTextosGral);
+}
+
+.header-home nav ul.nav-bar li {}
+
+
+.header-home nav ul.nav-bar li a {
+   
+}
+
+.header-home nav ul.login {
+    display: inline-block;
+    padding-left: 0px;
+    /* margin-bottom: 25px; */
+}
+
+.header-home nav ul.login li {
+    
+}
+
+
+.header-home nav ul.login li a {
+  
+}
+
+.header-home nav ul.login li i.fa-id-card {
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.header-home nav ul.login li i.fa-right-to-bracket{
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.header-home nav ul.login li i.fa-basket-shopping {
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.header-home div.burger-menu {
+    display: block;
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+    width: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 24px;
+    color: var(--blanco);
+    background-color: var(--celeste);
+    border-radius: 10%;
+}
+
+
+@media (min-width: 361px) {
+
+    header.header-home {
+       
+width: 100%;
+    }
+    
+    
+    header.header-home div.logo-and-search {
+        
+width: 100%;
+        
+margin-left: 6px;
+        
+justify-content: center;
+    }
+    
+    header.header-home div.logo-and-search div.logo-mercado-liebre{
+       
+/* display: inline-block; */
+       
+width: 27%;
+       
+margin-top: 11px;
+       
+/* display: inline-block; */
+    }
+    
+    header.header-home div.logo-and-search div.logo-mercado-liebre img {
+    /* width: 200px; */
+}
+    
+    header.header-home div.logo-and-search div.search-container {
+     
+display: flex;
+     
+justify-content: space-around;
+     
+position: relative;
+     
+width: 27%;
+     
+/* align-self: center; */
+     
+justify-content: center;
+     
+/* display: inline-block; */
+    }
+    
+    header.header-home div.logo-and-search div.search-container form {
+    /* height: 100%; */
+    /* text-align: end; */
+    width: 75%;
+    margin-top: 5px;
+    align-self: center;
+    }
+    
+    
+    header.header-home div.logo-and-search div.search-container form input {
+       
+/* text-align: left; */
+       
+margin-left: 5px;
+       
+position: absolute;
+       
+right: 25px;
+       
+width: 75%;
+       
+top: 8px;
+       
+margin-top: 8px;
+       
+/* display: inline-block; */
+    }
+    
+    header.header-home div.logo-and-search div.search-container i{
+       
+position: absolute;
+       
+display: inline-block;
+       
+font-size: var(--tamañoTextosGral);
+       
+top: 18px;
+       
+/* width: 20%; */
+       
+right: 8px;
+       
+padding: 1px;
+       
+background-color: var(--grisClaro);
+       
+border-radius: 2px;
+       
+border: 1px solid var(--grisOscuro);
+    }
+    
+    
+    .header-home div.compras-2 {
+
+position: relative;
+
+justify-content: center;
+
+align-items: center;
+
+/* text-align: center; */
+
+display: flex;
+
+flex-wrap: wrap;
+
+/* font-weight: var(--tamañoTextoGral); */
+
+width: 42%;
+
+/* padding-right: 5px; */
+}
+
+
+.header-home div.compras p.comprar-tarjeta{
+    /* display: block; */
+    text-align: center;
+    width: fit-content;
+    font-size: var(--tamañoTextosGral);
+    transform: translateX(10px);
+}
+
+
+.header-home div.compras-2 i.fa-hand-holding-dollar {
+    width: 15%;
+    margin-top: 15px;
+    /* align-self: center; */
+    /* display: inline-block; */
+    position: absolute;
+    left: -12px;
+    top: -13px;
+    /* left: 1px; */
+    font-size: 11px;
+}
+
+    
+    header.header-home  div.compras {
+        
+width: 30%;
+        
+display: none;
+        
+/* text-align: left; */
+        
+/* align-self: end; */
+        
+/* text-align: center; */
+        
+/* display: inline-block; */
+        
+/* text-align: left; */
+        
+/* margin-right: 0px; */
+        
+/* width: 50%; */
+        
+/* text-wrap: nowrap; */
+        
+/* position: absolute; */
+        
+/* top: 2%; */
+        
+/* margin-top: 60px; */
+        
+/* right: 10%; */
+    }
+    
+    
+    .header-home div.compras p.comprar-tarjeta{
+      
+/* text-align: center; */
+    }
+    
+    
+    .header-home div.compras i.fa-hand-holding-dollar {
+        
+    }
+    
+    
+    header-home div.iconsearch-header-home {
+       
+    }
+    
+    .header-home div.nav-container {
+
+display: flex;
+
+width: 100%;
+
+flex-wrap: wrap;
+
+margin: 15px 5px 0px 0px;
+
+padding-right: 35px;
+
+padding-left: 5px;
+
+/* gap: 10%; */
+
+justify-content: left;
+}
+
+    .header-home nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 45%;
+        /* align-items: flex-end; */
+        padding: 0px;
+        padding-left: end;
+        justify-content: right;
+        /* gap: 10px; */
+    }
+    
+    
+    .header-home nav ul.nav-bar {
+    
+            display: flex;
+                
+            align-items: center;
+    }
+    
+    
+    .header-home nav ul.nav-bar li {
+    margin-left: 5px;
+}
+
+    .header-home nav ul.nav-bar li a {
+       
+font-size: 10px;
+    }
+
+    
+    .header-home nav.nav-login {
+    
+justify-content: space-between;
+    
+padding: 0;
+    
+margin: 0;
+    }
+    
+
+
+    .header-home nav ul.login {
+    
+width: 100%;
+    
+justify-content: left;
+    
+display: flex;
+    
+align-items: flex-end;
+    
+margin-bottom: 15px;
+    
+/* padding-left: 10px; */
+    
+font-size: var(--tamañoTextosGral);
+    
+/* justify-content: flex-end; */
+}
+    
+    .header-home nav ul.login li{
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-end;
+    margin-left: 20px;
+}
+
+    .header-home nav ul.login li a {
+      
+text-align: center;
+      
+font-size: 9px;
+    }
+    
+    .header-home nav ul.login li i.fa-id-card {
+     
+    }
+    
+    .header-home nav ul.login li i.fa-right-to-bracket{
+     
+    }
+    
+    .header-home nav ul.login li i.fa-basket-shopping {
+       
+    }
+    
+    .header-home div.burger-menu {
+    display: none;
+    }
+
+}
+
+    
+ 
+    
+    
+    
+
+
+@media (min-width: 769px) {
+
+
+header.header-home div.compras {
+
+/* margin-top: 5%; */
+}
+
+.header-home div.logo-and-search div.logo-mercado-liebre {
+    
+padding-left: 20px;
+    
+width: 60%;
+}
+
+
+.header-home div.logo-and-search div.logo-mercado-liebre img.logo{
+    width: 105px;
+}
+    
+
+.header-home div.compras-2 {
+align-self: normal;
+margin-top: -20px;
+}
+
+.header-home div.compras-2 p.comprar-tarjeta {
+    
+font-size: var(--tamañoTextosGral);
+}
+
+.header-home div.compras-2 i {
+    
+}
+
+
+.header-home div p.comprar-tarjeta {
+}
+    
+    
+.header-home div i.fa-hand-holding-dollar {
+   
+left: 135px;
+   
+}
+
+
+.header-home div.nav-container {
+    padding: 0;
+    margin-left: 18px;
+}
+
+.header-home div.nav-container nav.nav-bar {
+
+justify-content: flex-start;
+}
+
+.header-home div.nav-container nav.nav-bar ul li {
+    margin-left: 15px;
+}
+
+
+.header-home div.nav-container nav.nav-login {
+/* width: 50%; */
+justify-content: end;
+}
+
+.header-home nav ul.login li a {
+    font-size: var(--tamañoTextosGral);
+}
+
+.header-home nav ul.nav-bar li a{
+    font-size: var(--tamañoTextosGral);
+}
+    
+    
+   
+
+}
+
+
+
+
+
+/*.header-home  div.contenedor-header div.search-container {
+
+}
+
+.header-home  div.contenedor-header div.search-container search {
+  
+}
+
+.header-home  div.contenedor-header div.search-container search form {
+ 
+}
+
+
+.header-home  div.contenedor-header div.search-container search form input.barra-busqueda-header {
+   
+}*/
